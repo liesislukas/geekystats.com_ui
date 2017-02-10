@@ -1,4 +1,8 @@
+Demo URL: https://radiologist-vector-10761.netlify.com/
+
 Based on: https://github.com/nicksp/redux-webpack-es6-boilerplate
+
+Boilerplate's readme:
 
 # React + Redux w/ ES6 Starter Project
 
