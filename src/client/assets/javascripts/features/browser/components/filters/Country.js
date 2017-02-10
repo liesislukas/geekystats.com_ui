@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {Button, RangeSlider, Switch, Control, Tooltip, Dialog} from "@blueprintjs/core";
-import {config} from './../../../../../../../../../../config/config';
+import {countries} from 'app/config';
 import {Chart} from 'react-google-charts';
 const Immutable = require('immutable');
 
@@ -44,7 +44,7 @@ export default class FilterCountry extends Component {
     let html_options_selected = [];
     let html_options_unselected = [];
 
-    config.countries.forEach(country => {
+    countries.forEach(country => {
       if (this.props.countries.has(country.iso)) {
         html_options_selected.push(<option key={country.iso} value={country.iso}>{country.name}</option>)
       } else {
@@ -95,7 +95,7 @@ export default class FilterCountry extends Component {
     const supported_countries = [];
 
     countries_graph_data.push(['Country']);
-    config.countries.forEach(country => {
+    countries.forEach(country => {
       countries_graph_data.push([country.name]);
       supported_countries.push(country.name);
     });

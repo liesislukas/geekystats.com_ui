@@ -1,5 +1,5 @@
 {
-  "name": "geekystats.com ui",
+  "name": "geekystats.com_ui",
   "description": "GeekyStats.com UI",
   "version": "2.0.1",
   "author": "Lukas Liesis <liesis.lukas@gmail.com>",
@@ -92,6 +92,7 @@
     "react": "15.3.1",
     "react-addons-css-transition-group": "15.4.2",
     "react-dom": "15.3.1",
+    "react-google-charts": "1.4.2",
     "react-google-maps": "6.0.1",
     "react-hot-loader": "3.0.0-beta.2",
     "react-redux": "4.4.5",
