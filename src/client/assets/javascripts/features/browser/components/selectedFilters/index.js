@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import Tag from './../tag';
-import {countries} from 'app/config';
+import {countries as countriesList} from 'app/config';
 const Immutable = require('immutable');
 
 export default class SelectedFilters extends Component {
@@ -67,7 +67,7 @@ export default class SelectedFilters extends Component {
     if (countries.size > 0) {
 
       let countries_names = {};
-      countries.forEach(country => {
+      countriesList.forEach(country => {
         countries_names[country.iso] = country.name;
       });
 

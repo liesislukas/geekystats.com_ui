@@ -1,9 +1,8 @@
 import React, {Component, PropTypes} from 'react';
-import {Button, RangeSlider, Switch, Control, Tooltip, Dialog} from '@blueprintjs/core';
 
 export default class Tag extends Component {
   render() {
-    console.warn('#skfksdjdf render: Tag');
+    console.warn('#skfksdjdf render: Tag', this.props);
 
     const {type, value, country_code, handleRemove} = this.props;
 

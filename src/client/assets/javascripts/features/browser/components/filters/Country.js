@@ -44,11 +44,17 @@ export default class FilterCountry extends Component {
     let html_options_selected = [];
     let html_options_unselected = [];
 
+    let counter = 0;
+
     countries.forEach(country => {
       if (this.props.countries.has(country.iso)) {
-        html_options_selected.push(<option key={country.iso} value={country.iso}>{country.name}</option>)
+        html_options_selected.push(
+          <option key={`country.iso ${counter++}`} value={country.iso}>{country.name}</option>
+        );
       } else {
-        html_options_unselected.push(<option key={country.iso} value={country.iso}>{country.name}</option>)
+        html_options_unselected.push(
+          <option key={`country.iso ${counter++}`} value={country.iso}>{country.name}</option>
+        );
       }
     });
 
