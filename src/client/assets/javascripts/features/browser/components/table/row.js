@@ -79,7 +79,7 @@ export default class TableRow extends Component {
             <div style={{position: 'relative'}}>
               <img
                 style={{width: 120, height: 100, border: '2px solid #ccc', margin: '6px 0 0', borderRadius: 3}}
-                src={img_src}
+                src={`https://www.geekystats.com/api/v1/screenshot?domain=${this.props.domain}`}
                 onMouseEnter={() => this.setState({show_big_image: true})}
                 onClick={() => this.setState({show_big_image: true})}
               />
