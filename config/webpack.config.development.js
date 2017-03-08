@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const config = require('./webpack.config.base');
 const path = require('path');
 
-
 const GLOBALS = {
   'process.env': {
     'NODE_ENV': JSON.stringify('development')
@@ -41,7 +40,7 @@ module.exports = merge(config, {
           'style',
           'css',
           'postcss',
-          { loader: 'sass', query: { outputStyle: 'expanded' } }
+          {loader: 'sass', query: {outputStyle: 'expanded'}}
         ]
       },
       // Sass + CSS Modules

@@ -21,6 +21,7 @@
     "build:serve": "http-server build/client -p 3003 --cors -o",
     "lint": "eslint config src/js/** --ext .js",
     "jscs": "jscs src/js/",
+    "ci": "npm run lint && npm test",
     "typecheck": "flow",
     "test": "mocha --compilers js:babel-core/register,css:./test/unit/cssNullCompiler.js --require ./test/unit/testHelper.js --recursive ./test/unit",
     "test:watch": "npm run test -- --watch",

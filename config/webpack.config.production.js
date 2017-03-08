@@ -33,7 +33,7 @@ module.exports = merge(config, {
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
-        screw_ie8: true
+        screw_ie8: true // eslint-disable-line
       },
       output: {
         comments: false
@@ -63,9 +63,9 @@ module.exports = merge(config, {
         loader: ExtractTextPlugin.extract({
           fallbackLoader: 'style',
           loader: [
-            { loader: 'css', query: { sourceMap: true } },
+            {loader: 'css', query: {sourceMap: true}},
             'postcss',
-            { loader: 'sass', query: { outputStyle: 'compressed' } }
+            {loader: 'sass', query: {outputStyle: 'compressed'}}
           ]
         })
       },
